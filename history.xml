@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<total>25</total>
+<success>true</success>
+
+<history>
+
+<fact>
+    <id>1</id>
+    <title>First struggle for independence</title>
+    <description>Many small kingdoms revolted against the British Raj.</description>
+    <when>01/01/1857</when>
+    <region>Asia</region>
+    <subregion>Delhi, Bihar</subregion>
+</fact>
+
+<fact>
+    <id>2</id>
+    <title>Formaton of Indian National Congress</title>
+    <description>Indian national congress was the first policial party India had. It played a major role in Indian independence struggle.</description>
+    <when>01/01/1886</when>
+    <region>Asia</region>
+    <subregion>India</subregion>
+</fact>
+
+<fact>
+    <id>3</id>
+    <title>First world war</title>
+    <description>First world war breaks in Europe</description>
+    <when>new Date( '01/01/1914' )</when>
+    <region>Europe</region>
+    <subregion>Germany</subregion>
+</fact>
+
+<fact>
+    <id>4</id>
+    <title>Second world war</title>
+    <description>Second world war breaks in Europe</description>
+    <when>new Date( '01/01/1940' )</when>
+    <region>Europe</region>
+    <subregion>Germany</subregion>
+</fact>
+
+</history>

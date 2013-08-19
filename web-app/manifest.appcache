@@ -1,0 +1,45 @@
+CACHE MANIFEST
+#2013-05-01: Version 1
+
+NETWORK:
+*
+
+CACHE:
+images/knp_MAPamerika_A.png
+images/knp_MAPamerika_B.png
+images/knp_MAPnorden_A.png
+images/knp_MAPnorden_B.png
+images/knp_MAPeuropa_A.png
+images/knp_MAPeuropa_B.png
+images/knp_MAPafrika_A.png
+images/knp_MAPafrika_B.png
+images/knp_MAPsovjet_A.png
+images/knp_MAPsovjet_B.png
+images/knp_MAPmellemoesten_A.png
+images/knp_MAPmellemoesten_B.png
+images/knp_MAPasien_A.png
+images/knp_MAPasien_B.png
+images/knp_norden_A.png
+images/knp_norden_B.png
+images/knp_europa_A.png
+images/knp_europa_B.png
+images/knp_amerika_A.png
+images/knp_amerika_B.png
+images/knp_sovjet_A.png
+images/knp_sovjet_B.png
+images/knp_mellemoesten_A.png
+images/knp_mellemoesten_B.png
+images/knp_asien_A.png
+images/knp_asien_B.png
+images/knp_afrika_A.png
+images/knp_afrika_B.png
+images/zoomkort_sovjet.png
+images/zoomkort_afrika.png
+images/zoomkort_australien.png
+images/zoomkort_europa.png
+images/zoomkort_kina.png
+# The image name below has a unicode character which gives error while fetching the image during the HTML 5 caching, so it has been commented
+#images/zoomkort_mellemøsten.png
+images/zoomkort_nordamerika.png
+images/zoomkort_norden.png
+images/zoomkort_sydamerika.png

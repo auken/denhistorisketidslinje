@@ -1,0 +1,1902 @@
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    clear: both;
+    margin: 5px 0;
+    width: 1260px;
+    overflow: hidden;
+}
+
+#map {
+    height: 350px;
+    border-top: 1px solid #000;
+    clear: both;
+}
+
+#wrapper {
+    padding: 4px;
+    clear: both;
+}
+
+#navi {
+    padding: 0 0 4px;
+    clear: both;
+}
+
+#scrollbar {
+    float: left;
+    margin-top: 5px;
+    width: 41px;
+    padding: 17px 0;
+    height: 400px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    background: url(../images/slider-left.jpg) no-repeat 0 0;
+}
+
+#gridBox {
+    float: right;
+    width: 1211px;
+}
+
+.gridBox {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul.gridBox {
+    margin-left: 5px
+}
+
+ul.gridBox li {
+    float: left;
+    width: 168px;
+    height: 26px;
+    margin-left: 5px;
+
+}
+
+.gridBoxs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.gridBoxs li:first-child {
+    margin-left: 0
+}
+
+ul.gridBoxs li {
+    float: left;
+    width: 168px;
+    padding-left: 5px;
+}
+
+.gridEntry {
+    font-size: 12px;
+    width: 158px;
+    padding: 2px 3px;
+    background: #e4e4e0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 2px solid #333;
+    font-weight: bold;
+    color: #0d0e2a;
+    position: absolute;
+    left: 1px;
+}
+
+.gridEntry:hover {
+    background: #fff;
+}
+
+.tooltip {
+    display: none;
+    font-size: 12px;
+    background: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #5b4635;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px #333;
+}
+
+.simple_overlay {
+    display: none;
+    z-index: 9998;
+    background: #fff;
+    width: 490px;
+    min-height: 416px;
+    border: 1px solid #5b4635;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #333;
+    margin: 0;
+    padding: 0;
+    -moz-box-shadow: 0 0 5px 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+}
+
+.simple_overlay .close {
+    background-image: url(../images/knp_lukopslag_A.png) !important;
+    position: absolute;
+    right: 11px;
+    top: 7px;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+}
+
+.overlay_details {
+    font-size: 11px;
+    color: #333;
+    padding: 0 10px 10px;
+}
+
+.overlay_content {
+    padding-right: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    top: 36px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333;
+    width: 453px;
+    padding: 0 10px 10px;
+    height: 364px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.hiddenYear {
+    color: #ff0000;
+    font-size: 12px;
+}
+
+#gridMultpleBox {
+    overflow: hidden;
+    width: 1211px;
+    height: 432px;
+    background: url(../images/single_grid.jpg) repeat-x 0 0;
+    margin: 5px 0 0 5px;
+    float: left;
+    position: relative;
+}
+
+#header {
+    height: 25px;
+    padding-top: 5px;
+    clear: both;
+    position: relative;
+    color: #8e7a62;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+#header a.button {
+    text-decoration: none;
+    color: #8e7a62;
+    border: 1px solid #e8eeee;
+    border-radius: 5px;
+    height: 19px;
+    text-align: center;
+    display: block;
+}
+
+#header .inputBox {
+    color: #8e7a62;
+    border: 1px solid #e8eeee;
+    width: 80px;
+    height: 14px;
+    display: block;
+    font-size: 12px;
+    padding: 2px 5px 2px;
+    outline: none
+}
+
+#header .inputBox:focus {
+    outline: none
+}
+
+#header a.selected {
+    background: #ebe8d5;
+    border-color: #cec799;
+}
+
+#header a.buttonSize {
+    width: 72px;
+}
+
+#header a.buttonSize92 {
+    width: 92px;
+}
+
+#header #logo {
+    position: absolute;
+    left: 500px;
+    top: 7px;
+    display: block;
+}
+
+#header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+#header ul li {
+    float: left;
+    padding-left: 5px;
+}
+
+#header ul li.right {
+    float: right;
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+/***************** New CSS ****************/
+#background {
+    /*position: absolute;*/
+    width: 1260px;
+    /*height: 940px;*/
+    /*z-index: 1;*/
+    left: 0;
+    background-image: url(../images/background.png);
+    top: 0
+}
+
+#header {
+    position: absolute;
+    width: 1260px;
+    height: 31px;
+    z-index: 4;
+    left: 0px;
+    top: 0px;
+    background-image: url(../images/header.png)
+}
+
+#tromle {
+    position: absolute;
+    width: 1260px;
+    height: 465px;
+    z-index: 4;
+    left: 0px;
+    top: 475px;
+    background-image: url(../images/tromle.png)
+}
+
+#knp_tidslinjen {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 5px;
+    top: 5px;
+    background-image: url(../images/knp_tidslinjen_A.png)
+}
+
+#knp_about {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 100px;
+    top: 5px;
+    background-image: url(../images/knp_about_A.png)
+}
+
+#knp_kontakt {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 195px;
+    top: 5px;
+    background-image: url(../images/knp_kontakt_A.png)
+}
+
+#knp_spil {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 290px;
+    top: 5px;
+    background-image: url(../images/knp_spil_A.png)
+}
+
+#knp_logud {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 1165px;
+    top: 5px;
+    background-image: url(../images/knp_logud_A.png)
+}
+
+#tid_1975-2000 {
+    position: absolute;
+    width: 41px;
+    height: 434px;
+    z-index: 5;
+    left: 4px;
+    top: 540px;
+    background-image: url(../images/tid_1975-2000.png)
+}
+
+#knp_norden {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_norden_A.png)
+}
+
+#knp_europa {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_europa_A.png)
+}
+
+#knp_amerika {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_amerika_A.png)
+}
+
+#knp_sovjet {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_sovjet_A.png)
+}
+
+#knp_mellemoesten {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_mellemoesten_A.png)
+}
+
+#knp_asien {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_asien_A.png)
+}
+
+#knp_afrika {
+    width: 170px;
+    height: 22px;
+    background-image: url(../images/knp_afrika_A.png)
+}
+
+#knp_MAPamerika {
+    position: absolute;
+    width: 332px;
+    height: 445px;
+    z-index: 2;
+    left: 180px;
+    top: 31px;
+    background: url(../images/knp_MAPamerika_A.png) no-repeat;
+    cursor: pointer
+}
+
+#knp_MAPamerika:hover {
+    background: url(../images/knp_MAPamerika_B.png) no-repeat
+}
+
+#knp_MAPamerika.selected {
+    background: url(../images/knp_MAPamerika_B.png) no-repeat
+}
+
+#apDiv1 {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 6;
+    left: 5px;
+    top: 5px;
+    background-image: url(../images/knp_tidslinjen_C.png)
+}
+
+#knp_MAPnorden {
+    position: absolute;
+    width: 253px;
+    height: 153px;
+    z-index: 3;
+    left: 413px;
+    top: 31px;
+    background-image: url(../images/knp_MAPnorden_A.png);
+    cursor: pointer
+}
+
+#knp_MAPnorden:hover {
+    background-image: url(../images/knp_MAPnorden_B.png)
+}
+
+#knp_MAPnorden.selected {
+    background-image: url(../images/knp_MAPnorden_B.png)
+}
+
+#knp_MAPeuropa {
+    position: absolute;
+    width: 110px;
+    height: 79px;
+    z-index: 3;
+    left: 562px;
+    top: 166px;
+    background-image: url(../images/knp_MAPeuropa_A.png);
+    cursor: pointer
+}
+
+#knp_MAPeuropa:hover {
+    background-image: url(../images/knp_MAPeuropa_B.png)
+}
+
+#knp_MAPeuropa.selected {
+    background-image: url(../images/knp_MAPeuropa_B.png)
+}
+
+#knp_MAPafrika {
+    position: absolute;
+    width: 169px;
+    height: 170px;
+    z-index: 2;
+    left: 545px;
+    top: 238px;
+    background-image: url(../images/knp_MAPafrika_A.png);
+    cursor: pointer
+}
+
+#knp_MAPafrika:hover {
+    background-image: url(../images/knp_MAPafrika_B.png)
+}
+
+#knp_MAPafrika.selected {
+    background-image: url(../images/knp_MAPafrika_B.png)
+}
+
+#knp_MAPsovjet {
+    position: absolute;
+    width: 432px;
+    height: 212px;
+    z-index: 2;
+    left: 637px;
+    top: 31px;
+    background-image: url(../images/knp_MAPsovjet_A.png);
+    cursor: pointer
+}
+
+#knp_MAPsovjet:hover {
+    background-image: url(../images/knp_MAPsovjet_B.png)
+}
+
+#knp_MAPsovjet.selected {
+    background-image: url(../images/knp_MAPsovjet_B.png)
+}
+
+#knp_MAPmellemoesten {
+    position: absolute;
+    width: 129px;
+    height: 74px;
+    z-index: 4;
+    left: 651px;
+    top: 224px;
+    background-image: url(../images/knp_MAPmellemoesten_A.png);
+    cursor: pointer
+}
+
+#knp_MAPmellemoesten:hover {
+    background-image: url(../images/knp_MAPmellemoesten_B.png)
+}
+
+#knp_MAPmellemoesten.selected {
+    background-image: url(../images/knp_MAPmellemoesten_B.png)
+}
+
+#knp_MAPasien {
+    position: absolute;
+    width: 296px;
+    height: 256px;
+    z-index: 3;
+    left: 736px;
+    top: 184px;
+    background-image: url(../images/knp_MAPasien_A.png);
+    cursor: pointer
+}
+
+#knp_MAPasien:hover {
+    background-image: url(../images/knp_MAPasien_B.png)
+}
+
+#knp_MAPasien.selected {
+    background-image: url(../images/knp_MAPasien_B.png)
+}
+
+.opslag {
+    display: none;
+    position: absolute;
+    width: 1210px;
+    height: 432px;
+    z-index: 7;
+    left: 46px;
+    top: 505px;
+    background-image: url(../images/opslag.png)
+}
+
+.opslag .close {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    z-index: 8;
+    left: 845px;
+    top: 525px;
+    background-image: url(../images/knp_lukopslag_A.png)
+}
+
+#knp_lukopslag {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    z-index: 8;
+    left: 845px;
+    top: 525px;
+    background-image: url(../images/knp_lukopslag_A.png)
+}
+
+#zoomkort_europa {
+    display: none;
+    position: absolute;
+    width: 1260px;
+    height: 445px;
+    z-index: 9;
+    left: 0px;
+    top: 31px;
+    background: url(../images/overlay.png) repeat 0 0;
+
+}
+
+#show_down_arrow {
+    position: absolute;
+    left: 553px;
+    top: 379px;
+    z-index: 4;
+}
+
+#show_up_arrow {
+    position: absolute;
+    left: 553px;
+    z-index: 4;
+}
+
+#eventpointer {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    left: 662px;
+    top: 222px;
+    background-image: url(../images/eventpointer.png)
+}
+
+ul.regionsHeading {
+    list-style: none;
+    margin: 0 0 0 50px
+}
+
+ul.regionsHeading li:first-child {
+    margin-left: 0
+}
+
+ul.regionsHeading li {
+    float: left;
+    margin-left: 3px
+}
+
+.topContainer {
+    height: 477px;
+    overflow: hidden;
+}
+
+.overlay_heading {
+    background: url(../images/overlay-heading.png) no-repeat;
+    width: 433px;
+    height: 14px;
+    padding: 4px 4px 3px;
+    margin-top: 7px;
+    color: #947E5A;
+    font-weight: bold;
+}
+
+#knp_norden.selectedRegion {
+    background: url(../images/knp_norden_B.png);
+}
+
+#knp_europa.selectedRegion {
+    background: url(../images/knp_europa_B.png);
+}
+
+#knp_amerika.selectedRegion {
+    background: url(../images/knp_amerika_B.png);
+}
+
+#knp_sovjet.selectedRegion {
+    background: url(../images/knp_sovjet_B.png);
+}
+
+#knp_mellemoesten.selectedRegion {
+    background: url(../images/knp_mellemoesten_B.png);
+}
+
+#knp_asien.selectedRegion {
+    background: url(../images/knp_asien_B.png);
+}
+
+#knp_afrika.selectedRegion {
+    background: url(../images/knp_afrika_B.png);
+}
+
+#gridMultpleBox .selectedRegion {
+    background: #fff;
+    opacity: 0.5;
+}
+
+#scrollbar a {
+    color: #F3ED9F;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bolder;
+    font-family: arial;
+}
+
+.bottomYear {
+    position: absolute;
+    bottom: 19px;
+    left: 7px;
+}
+
+.topArrow {
+    position: absolute;
+    top: 3px;
+    left: 11px;
+}
+
+.bottomArrow {
+    position: absolute;
+    bottom: -14px;
+    left: 5px;
+}
+
+#scrollbar a span {
+    cursor: auto
+}
+
+.divNumber1 {
+    top: 17px
+}
+
+.divNumber2 {
+    top: 34px
+}
+
+.divNumber3 {
+    top: 51px
+}
+
+.divNumber4 {
+    top: 68px
+}
+
+.divNumber5 {
+    top: 85px
+}
+
+.divNumber6 {
+    top: 1026px
+}
+
+.divNumber7 {
+    top: 119px
+}
+
+.divNumber8 {
+    top: 136px
+}
+
+.divNumber9 {
+    top: 153px
+}
+
+.divNumber10 {
+    top: 170px
+}
+
+.divNumber11 {
+    top: 187px
+}
+
+.divNumber12 {
+    top: 204px
+}
+
+.divNumber13 {
+    top: 221px
+}
+
+.divNumber14 {
+    top: 238px
+}
+
+.divNumber15 {
+    top: 255px
+}
+
+.divNumber16 {
+    top: 272px
+}
+
+.divNumber17 {
+    top: 289px
+}
+
+.divNumber18 {
+    top: 306px
+}
+
+.divNumber19 {
+    top: 323px
+}
+
+.divNumber20 {
+    top: 340px
+}
+
+.divNumber21 {
+    top: 357px
+}
+
+.divNumber22 {
+    top: 374px
+}
+
+.divNumber23 {
+    top: 391px
+}
+
+.divNumber24 {
+    top: 408px
+}
+
+.divNumber25 {
+    top: 425px
+}
+
+#selectedYear {
+    color: #B6363A;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#show_period {
+    background: #e0e2dc;
+}
+
+#headerGame {
+    position: relative;
+    width: 1260px;
+    height: 70px;
+    z-index: 4;
+    left: 0px;
+    top: 0px;
+    background-image: url(../images/header.png);
+}
+
+#tromle {
+    position: absolute;
+    width: 1260px;
+    height: 465px;
+    z-index: 4;
+    left: 0px;
+    top: 475px;
+    background-image: url(../images/tromle.png);
+}
+
+#knp_tidslinjen {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 5px;
+    top: 5px;
+    background-image: url(../images/knp_tidslinjen_A.png);
+}
+
+#knp_about_game {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 100px;
+    top: 5px;
+    background-image: url(../images/btn_about_C.png);
+}
+
+#knp_kontakt_game {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 195px;
+    top: 5px;
+    background-image: url(../images/btn_kontakt_C.png);
+}
+
+#knp_spil_game {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 290px;
+    top: 5px;
+    background-image: url(../images/btn_spil_B.png);
+}
+
+#apDiv2 {
+    position: absolute;
+    width: 1260px;
+    height: 41px;
+    z-index: 4;
+    left: 0px;
+    top: 30px;
+    background-image: url(../images/headerKRO.png);
+}
+
+#b {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 5px;
+    top: 35px;
+    background-image: url(../images/btn_KROstart_A.png);
+}
+
+#apDiv4 {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 100px;
+    top: 35px;
+    background-image: url(../images/btn_KROundo_C.png);
+}
+
+#apDiv5 {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 195px;
+    top: 35px;
+    background-image: url(../images/btn_KROclear_C.png);
+}
+
+#apDiv6 {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 385px;
+    top: 35px;
+    background-image: url(../images/btn_KROpdf_C.png);
+}
+
+#apDiv3 {
+    position: absolute;
+    width: 91px;
+    height: 21px;
+    z-index: 5;
+    left: 290px;
+    top: 35px;
+    background-image: url(../images/btn_KROtidslinje_C.png);
+}
+
+#apDiv7 {
+    position: absolute;
+    width: 437px;
+    height: 22px;
+    z-index: 5;
+    left: 795px;
+    top: 34px;
+    background-image: url(../images/step0.png);
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+    line-height: 1px;
+}
+
+.middle-content {
+    background: url(../images/background_KRO.png) 0 -80px no-repeat;
+    height: 940px;
+    width: 1260px;
+}
+
+.middle-content .left-col {
+    float: left;
+    margin-left: 262px;
+    background: url(../images/timescaleKRO.png) 0 0 no-repeat;
+    padding-left: 40px;
+    height: 682px;
+    width: 58%;
+}
+
+#containerDiv {
+    height: 682px;
+
+}
+
+.middle-content .right-col {
+    float: left;
+    height: 648px;
+    width: 18%;
+    position: relative;
+}
+
+#apDiv14 {
+    width: 193px;
+    height: 153px;
+    background-image: url(../images/toolboxKRO_6A.png);
+    margin-left: 10px;
+    padding: 23px 4px 4px;
+}
+
+#apDiv14 .container {
+    padding: 15px 20px 0;
+}
+
+#toolBoxDiv {
+    padding: 0;
+    margin: 0;
+    width: 160px;
+}
+
+.middle-content .box {
+    width: 100%;
+    background: #add8e6;
+    height: 100px;
+    margin-bottom: 2px;
+    border: 1px solid;
+}
+
+#toolBoxDiv .box {
+    width: 98%;
+    height: 28px;
+}
+
+.outerbox {
+    background: #add8e6;
+    height: 50px;
+    margin-bottom: 2px;
+    border: 1px solid;
+}
+
+.middle-content .left-col .placeholder {
+    float: left;
+    width: 40%;
+    border-right: 2px solid #fff;
+    height: 682px;
+    position: relative;
+}
+
+#luk {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    z-index: 5;
+    left: 1235px;
+    top: 34px;
+    background-image: url(../images/btn_lukopslag_A.png);
+}
+
+#apDiv13 {
+    width: 201px;
+    height: 496px;
+    z-index: 4;
+    margin: 10px 0 5px 10px;
+    background-image: url(../images/textKRO_0.png);
+}
+
+.ui-resizable-helper {
+    border: 2px dotted #00F;
+}
+
+.shadow {
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: -19px 19px 6px 5px #a9a9a9;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-text-size-adjust: none;
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/** * Minimal base styles.*/
+html {
+    font-size: 100.01%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 62.5%;
+    line-height: 1em;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    cursor /**/: /**/ pointer;
+}
+
+a:link:hover, a:visited:hover {
+    text-decoration: underline;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Default List Styles  */
+ul, ol {
+    list-style: none;
+}
+
+li {
+    line-height: 1.2em;
+}
+
+li ul, li ol {
+    margin-bottom: 0px;
+}
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+
+.iem7 input[type="checkbox"] {
+    vertical-align: baseline;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+textarea {
+    overflow: auto;
+}
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+    cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+    margin: 0;
+}
+
+/* Make buttons play nice in IE:
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {
+    width: auto;
+    overflow: visible;
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/*
+ * Clearing Methods
+ */
+.clearfix:after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+    line-height: 1px;
+}
+
+/*---- Floats ----*/
+.flR {
+    float: right;
+}
+
+.flL {
+    float: left;
+}
+
+#container {
+    background: url(../images/background_KRO.png) 0 0 no-repeat;
+    width: 1260px;
+}
+
+#headerGameBoard {
+    background: #fff;
+    padding: 5px 0;
+}
+
+#headerGameBoard .top {
+    padding: 0 5px;
+}
+
+#headerGameBoard .top ul {
+    float: left;
+    margin-right: 110px;
+}
+
+#headerGameBoard .top ul li {
+    float: left;
+    margin-right: 4px;
+}
+
+#headerGameBoard .top .btn-logud {
+    float: right;
+}
+
+#menu {
+    padding: 4px;
+    background: #f2f2f2 url(../images/header_kro_txt.png) 562px 5px no-repeat;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+}
+
+#menu .actions {
+    float: left;
+}
+
+#menu .actions li {
+    float: left;
+    margin-right: 4px;
+}
+
+#steps {
+    float: right;
+    width: 437px;
+}
+
+#steps li {
+    float: left;
+}
+
+#steps li a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    width: 75px;
+    height: 22px;
+}
+
+#steps li.step1 a {
+    background: url(../images/../images/step_sprit.png) 0 0 no-repeat;
+    width: 77px;
+}
+
+#steps li.step2 a {
+    background: url(../images/step_sprit.png) -77px 0 no-repeat;
+}
+
+#steps li.step3 a {
+    background: url(../images/step_sprit.png) -152px 0 no-repeat;
+}
+
+#steps li.step4 a {
+    background: url(../images/step_sprit.png) -227px 0 no-repeat;
+}
+
+#steps li.step5 a {
+    background: url(../images/step_sprit.png) -305px 0 no-repeat;
+}
+
+#steps li.step6 a {
+    background: url(../images/step_sprit.png) -377px 0 no-repeat;
+    width: 60px;
+}
+
+#steps li.step1.active a {
+    background: url(../images/step_sprit.png) 0 -22px no-repeat;
+}
+
+#steps li.step2.active a {
+    background: url(../images/step_sprit.png) -60px -44px no-repeat;
+    width: 91px;
+    position: relative;
+    z-index: 9;
+    margin-left: -17px;
+}
+
+#steps li.step3.active a {
+    background: url(../images/step_sprit.png) -135px -66px no-repeat;
+    width: 91px;
+    position: relative;
+    z-index: 9;
+    margin-left: -17px;
+}
+
+#steps li.step4.active a {
+    background: url(../images/step_sprit.png) -211px -88px no-repeat;
+    width: 91px;
+    position: relative;
+    z-index: 9;
+    margin-left: -17px;
+}
+
+#steps li.step5.active a {
+    background: url(../images/step_sprit.png) -286px -110px no-repeat;
+    width: 91px;
+    position: relative;
+    z-index: 9;
+    margin-left: -17px;
+}
+
+#steps li.step6.active a {
+    background: url(../images/step_sprit.png) -359px -132px no-repeat;
+    width: 78px;
+    position: relative;
+    z-index: 9;
+    margin-left: -18px;
+}
+
+.middle-content-gameboard {
+    height: 940px;
+    width: 1260px;
+    padding-top: 17px;
+    position: relative;
+}
+
+.middle-content-gameboard .left-col {
+    float: left;
+    margin-left: 262px;
+    background: url(../images/timescaleKRO.png) 0 0 no-repeat;
+    padding-left: 40px;
+    height: 682px;
+    width: 59%;
+}
+
+.middle-content-gameboard .right-col {
+    float: left;
+    height: 648px;
+    width: 17%;
+    position: relative;
+}
+
+.middle-content-gameboard .left-col .placeholder {
+    float: left;
+    width: 326px;
+    border: 1px solid #fff;
+    height: 680px;
+    margin-left: 4px;
+}
+
+.middle-content-gameboard .boxGameBoard {
+    width: 100%;
+    background: #bbcecc;
+    position: relative;
+    height: 35px;
+    margin-bottom: 9px;
+    border: 1px solid #56534e;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#step1 .right-col .content {
+    margin-bottom: 5px;
+    background: url(../images/textKRO_1.png) 0 0 no-repeat;
+    padding: 8px 5px 23px 8px;
+    height: 134px;
+    width: 188px;
+    color: #000;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#step1 .right-col .box-container {
+    background: url(../images/toolboxKRO_1.png) 0 0 no-repeat;
+    padding: 160px 30px 30px 30px;
+    height: 321px;
+    width: 141px;
+    color: #000;
+}
+
+#containerDivGameBoard {
+    height: 682px;
+}
+
+#toolBoxDivGameBoard .boxGameBoard {
+    width: 98%;
+    height: 18px;
+}
+
+#toolBoxDivGameBoard {
+    padding: 0;
+    margin: 0;
+    width: 160px;
+}
+
+#step2 .left-col {
+    width: 43%;
+}
+
+#step2 .right-col {
+    width: 32%;
+}
+
+#step2 .right-col .content {
+    margin-bottom: 5px;
+    background: url(../images/textKRO_2.png) 0 0 no-repeat;
+    padding: 8px 5px 23px 8px;
+    height: 46px;
+    width: 388px;
+    color: #000;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#step2 .right-col .box-container {
+    background: url(../images/toolboxKRO_2.png) 0 0 no-repeat;
+    padding: 50px 30px 30px 30px;
+    height: 530px;
+    width: 340px;
+    color: #000;
+}
+
+#step2 .right-col .box-container .boxGameBoard {
+    height: auto;
+    border: 0px;
+    text-transform: none;
+    -moz-box-shadow: inset 0 0 0px #7f8581;
+    -webkit-box-shadow: inset 0 0 0px #7f8581;
+    box-shadow: inset 0 0 0px #7f8581;
+    margin-bottom: 4px;
+}
+
+#step2 .right-col .box-container ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 14px;
+}
+
+#step2 .left-col .boxGameBoard ul li, #step3 .left-col .boxGameBoard ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 14px;
+    text-transform: none;
+}
+
+.list {
+    width: 100%;
+    background: #bbcecc;
+    position: relative;
+    margin-bottom: 4px;;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+}
+
+#step3 .right-col .content {
+    margin-bottom: 5px;
+    background: url(../images/textKRO_1.png) 0 0 no-repeat;
+    padding: 8px 5px 23px 8px;
+    height: 136px;
+    width: 189px;
+    color: #000;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#step3 .right-col .box-container {
+    background: url(../images/toolboxKRO_1.png) 0 0 no-repeat;
+    padding: 160px 10px 30px 10px;
+    height: 320px;
+    width: 180px;
+    color: #000;
+}
+
+.left-col .boxGameBoard .event {
+    background: url(../images/event.png) 0 0 no-repeat;
+    padding-left: 8px;
+    position: absolute;
+    right: -187px;
+    bottom: -12px;
+}
+
+.left-col .boxGameBoard .event .text {
+    font-weight: bold;
+    padding: 0px 3px;
+    background: #fff;
+    border: 1px solid #666;
+    color: #000;
+    font-size: 11px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 170px;
+    height: 17px;
+}
+
+.right-col  .event {
+    background: #e4e5e0;
+    padding: 1px 3px;
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 11px;
+    border: 1px solid #666;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 14px;
+    font-weight: bold;
+}
+
+#step1 .right-col .box-container .list {
+    display: none;
+}
+
+#step2 .right-col .box-container .boxGameBoard {
+    display: none;
+}
+
+#step2 .right-col .box-container .boxGameBoard.list {
+    display: block;
+}
+
+#step1 .right-col .box-container .list, #step3 .right-col .box-container .list, #step4 .right-col .box-container .list, #step5 .right-col .box-container .list, #step6 .right-col .box-container .list {
+    display: none;
+}
+
+#step2 .right-col .box-container .box, #step3 .right-col .box-container .boxGameBoard, #step4 .right-col .box-container .boxGameBoard, #step5 .right-col .box-container .boxGameBoard, #step6 .right-col .box-container .boxGameBoard {
+    display: none;
+}
+
+#step2 .right-col .box-container .list {
+    display: block;
+}
+
+#step1 .right-col .box-container .event, #step2 .right-col .box-container .event, #step4 .right-col .box-container .event, #step5 .right-col .box-container .event, #step6 .right-col .box-container .event {
+    display: none;
+}
+
+#step3 .right-col .box-container .event, #step6 .right-col .box-container .event {
+    display: block;
+}
+
+#step1 .left-col .boxGameBoard .event, #step2 .left-col .boxGameBoard .event {
+    display: none;
+}
+
+#step3 .left-col .boxGameBoard .event {
+    display: block;
+}
+
+.go-next {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_KROnext_C.png") no-repeat 0 0;
+}
+
+.go-next.active {
+    background: url("../images/btn_KROnext_A.png") no-repeat 0 0;
+}
+
+.tilbage {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_tilbage.png") no-repeat 0 0;
+}
+
+.help {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_hjelp.png") no-repeat 0 0;
+}
+
+.overfer {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/overfer.png") no-repeat 0 0;
+}
+
+.hent-data {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/hent-data.png") no-repeat 0 0;
+}
+
+.undoStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_KROundo_C.png") no-repeat 0 0;
+}
+
+.undoStep.active {
+    background: url("../images/btn_KROundo_A.png") no-repeat 0 0;
+}
+
+.resetStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_KROclear_A.png") no-repeat 0 0;
+}
+
+.tidslinjeStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_KROtidslinje_C.png") no-repeat 0 0;
+}
+
+.tidslinjeStep.active {
+    background: url("../images/btn_KROtidslinje_A.png") no-repeat 0 0;
+}
+
+.openPdfStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_KROpdf_A.png") no-repeat 0 0;
+}
+
+.tidslinjenStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_tidslinjen.png") no-repeat 0 0;
+}
+
+.om_projektetStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_om_projektet.png") no-repeat 0 0;
+}
+
+.kontaktStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_kontakt.png") no-repeat 0 0;
+}
+
+.btn-logud {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_logud.png") no-repeat 0 0;
+}
+
+.spilStep {
+    display: block;
+    height: 21px;
+    text-decoration: none;
+    width: 91px;
+    background: url("../images/btn_spil.png") no-repeat 0 0;
+}
+
+#mapDiv {
+    position: absolute;
+    top: 67px;
+    left: 5px;;
+    background: #fff;
+}
+
+.mapToolBox {
+    background: url("../images/toolboxKRO_3A.png") no-repeat scroll 0 0 transparent;
+    height: 140px;
+    margin-left: 5px;
+    margin-top: 236px;
+    padding: 60px 30px 30px;
+    position: relative;
+    width: 240px;
+    z-index: 99;
+}
+
+.green-box-container {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 119px;
+    left: 5px;
+    top: 10px;
+    height: 682px;
+}
+
+.yellow-box-container {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 119px;
+    left: 130px;
+    top: 10px;
+    height: 682px;
+}
+
+#step1 .green-box-container, #step2 .green-box-container, #step3 .green-box-container {
+    display: none;
+}
+
+#step1 .yellow-box-container, #step2 .yellow-box-container, #step3 .yellow-box-container {
+    display: none;
+}
+
+#step4 .right-col .box-container, #step5 .right-col .box-container, #step6 .right-col .box-container {
+    background: url("../images/toolboxKRO_4.png") 0 0 no-repeat;
+    padding: 45px 30px 20px 30px;
+    height: 450px;
+    width: 140px;
+    color: #000;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#step4 .right-col .content, #step5 .right-col .content, #step6 .right-col .content {
+    margin-bottom: 5px;
+    background: url("../images/textKRO_4.png") 0 0 no-repeat;
+    padding: 8px 5px 23px 8px;
+    height: 135px;
+    width: 188px;
+    color: #000;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.middle-content-gameboard .green-box {
+    width: 96%;
+    background: #c9cc9f;
+    position: relative;
+    height: 25px;
+    margin-bottom: 9px;
+    border: 1px solid #56534e;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px;
+    -moz-box-shadow: inset 0 0 5px #7f8581;
+    -webkit-box-shadow: inset 0 0 5px #7f8581;
+    box-shadow: inset 0 0 5px #7f8581;
+}
+
+.middle-content-gameboard .yellow-box {
+    width: 96%;
+    background: #dbc886;
+    position: relative;
+    height: 25px;
+    margin-bottom: 9px;
+    border: 1px solid #56534e;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px;
+    -moz-box-shadow: inset 0 0 5px #7f8581;
+    -webkit-box-shadow: inset 0 0 5px #7f8581;
+    box-shadow: inset 0 0 5px #7f8581;
+}
+
+#step1 .green-box, #step2 .green-box, #step3 .green-box {
+    display: none;
+}
+
+#step1 .yellow-box, #step2 .yellow-box, #step3 .yellow-box {
+    display: none;
+}
+
+.history-lessons {
+    position: absolute;
+    border: 1px solid #c9ccc1;
+    width: 199px;
+    left: 820px;
+    top: 10px;
+    height: 682px;
+}
+
+#step1 .history-lessons, #step2 .history-lessons, #step3 .history-lessons, #step4 .history-lessons {
+    display: none;
+}
+
+.form {
+    height: 21px;
+    margin-top: 15px;
+}
+
+.form label {
+    font-size: 12px;
+    color: #9f9999;
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    line-height: 21px;
+}
+
+.form input[type="text"] {
+    margin-right: 10px;
+    background: url("../images/textformKRO.png") 0 0 no-repeat;
+    height: 21px;
+    line-height: 21px;
+    width: 31px;
+    padding: 0px 5px;
+    text-align: center;
+    border: 0px;
+    float: left;
+    font-size: 11px;
+    color: #999;
+}
+
+.form input[type="submit"] {
+    background: url("../images/btn_OK_A.png") 0 0 no-repeat;
+    height: 21px;
+    border: 0px;
+    float: left;
+    width: 41px;
+    cursor: pointer;
+}
+
+#step1 .form, #step2 .form, #step3 .form, #step4 .form {
+    display: none;
+}
+
+.middle-content-gameboard .history-box {
+    width: 96%;
+    background: #b3af8c;
+    position: relative;
+    height: 25px;
+    margin-bottom: 9px;
+    border: 1px solid #56534e;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px;
+    -moz-box-shadow: inset 0 0 5px #7f8581;
+    -webkit-box-shadow: inset 0 0 5px #7f8581;
+    box-shadow: inset 0 0 5px #7f8581;
+}
+
+#step1 .history-box, #step2 .history-box, #step3 .history-box, #step4 .history-box {
+    display: none;
+}
+
+.map-container {
+    border-radius: 10px;
+    width: 593px;
+    height: 418px;
+    margin-left: 355px;
+    margin-top: 13px;
+    padding: 5px;
+    box-shadow: 0 0 5px #ccc;
+    position: absolute;
+    left: 0
+}
+
+.show_point {
+    width: 24px;
+    height: 24px;
+    background: url(../images/eventpointer.png) no-repeat scroll 0 0 transparent;
+}
+
+.map_location_point {
+    width: 24px;
+    height: 24px;
+    background: url(../images/eventpointer.png) no-repeat scroll 0 0 transparent;
+}
+
+.gridEntryToolBox {
+    font-size: 12px;
+    width: 158px;
+    padding: 5px 10px;
+    background: #e4e4e0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 2px solid #333;
+    font-weight: bold;
+    color: #0d0e2a;
+    margin-top: 10px;
+}
+
+.stepOneBoxes .list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.stepOneBoxes .list ul {
+    margin: 0px;
+}
+
+@page {
+    size: 15in 15in;
+}

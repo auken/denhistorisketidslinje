@@ -1,2 +1,0 @@
-
-1. Data saved in not currently saved beyond the current session. 

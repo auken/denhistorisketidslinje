@@ -17,8 +17,10 @@ class BootStrap {
         if (!Role.count) {
             bootStrapService.createRole()
             bootStrapService.createUser("admin", "admin", true)
-            bootStrapService.createUser("user1", "user1", true)
-            bootStrapService.createUser("user2", "user2", true)
+            bootStrapService.createUser("esben", "esben123", true)
+            bootStrapService.createUser("axel", "axel123", true)
+            bootStrapService.createUser("lasse", "lasse123", true)
+            bootStrapService.createUser("jonas", "jonas123", true)
         }
 
         if (!Game.count) {

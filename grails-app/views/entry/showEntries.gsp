@@ -20,11 +20,11 @@
 
         <div id="apDiv1"></div>
 
-        <div id="knp_about"></div>
+        <a href="about"><div id="knp_about"></div></a>
 
-        <div id="knp_kontakt"></div>
+        <a href="kontakt"><div id="knp_kontakt"></div></a>
 
-        <div id="knp_spil"></div>
+        <a href="../game/startGame"><div id="knp_spil"></div></a>
 
         <div id="knp_logud"></div>
 
@@ -67,7 +67,7 @@
                     </g:each>
                 </g:each>
 
-                <g:each in="${regionWiseEntries["mellemøsten"]}" var="entries">
+                <g:each in="${regionWiseEntries["mellemoesten"]}" var="entries">
                     <g:each in="${entries.mapLocations}" var="mapLocation">
                         <div id="${entries.region.name}-${entries.year}" class="show_point"
                              style='position: absolute; top: ${mapLocation.topPosition}%; left:${mapLocation.first().leftPosition}%;'></div>
@@ -259,7 +259,7 @@
             </li>
 
             <li id="li_MAPmellemoesten">
-                <dht:renderRegionEntries entries="${regionWiseEntries['mellemøsten']}"/>
+                <dht:renderRegionEntries entries="${regionWiseEntries['mellemoesten']}"/>
             </li>
 
             <li id="li_MAPasien">
@@ -282,7 +282,7 @@
         <g:render template="entryDescription"
                   model="[entries: regionWiseEntries['sovjet']]"/>
         <g:render template="entryDescription"
-                  model="[entries: regionWiseEntries['mellemøsten']]"/>
+                  model="[entries: regionWiseEntries['mellemoesten']]"/>
         <g:render template="entryDescription"
                   model="[entries: kinaAndAustralienEntries]"/>
         <g:render template="entryDescription"
@@ -426,7 +426,7 @@
             switch (currentEntryMap) {
                 case 'sydamerika':
                     currentEntryDiv = jQuery(this);
-                    downArrow.show();
+                    upArrow.show();
                     changeZoomedMapsWithDownArrow(downArrow, "nordamerika", currentEntryDiv);
                     break;
                 case 'nordamerika':
@@ -441,11 +441,12 @@
                     break;
                 case 'australien':
                     currentEntryDiv = jQuery(this);
-                    downArrow.show();
+                    upArrow.show();
                     changeZoomedMapsWithDownArrow(downArrow, "kina", currentEntryDiv);
                     break;
                 default:
-                    downArrow.unbind();
+                	downArrow.hide();
+                	upArrow.hide();
             }
             zoomedEuropa.show();
         });

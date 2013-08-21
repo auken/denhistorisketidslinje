@@ -18,9 +18,9 @@
         <div class="top clearfix">
             <a href="#" class="btn-logud" id="logud">&nbsp;</a>
             <ul>
-                <li><a href="#" id="tidslinjen" class="tidslinjenStep">&nbsp;</a></li>
-                <li><a href="#" id="om_projektet" class="om_projektetStep">&nbsp;</a></li>
-                <li><a href="#" id="kontakt" class="kontaktStep">&nbsp;</a></li>
+                <li><a href="../entry/showEntries" id="tidslinjen" class="tidslinjenStep">&nbsp;</a></li>
+                <li><a href="../about" id="om_projektet" class="om_projektetStep">&nbsp;</a></li>
+                <li><a href="../kontakt" id="kontakt" class="kontaktStep">&nbsp;</a></li>
                 <li>
                     <a href="#" id="spil" class="spilStep"></a>
                 </li>

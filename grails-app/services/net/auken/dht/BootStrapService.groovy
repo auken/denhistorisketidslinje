@@ -6,7 +6,7 @@ class BootStrapService {
 
     def grailsApplication
     def createRegions() {
-        List<String> regionNames = ['Nordamerika', 'Sydamerika', 'Norden', 'Europa', 'Afrika', 'Mellemøsten', 'Australien', 'Kina', 'Sovjet']
+        List<String> regionNames = ['Nordamerika', 'Sydamerika', 'Norden', 'Europa', 'Afrika', 'Mellemoesten', 'Australien', 'Kina', 'Sovjet']
         regionNames.each { String regionName ->
             new Region(name: regionName.toUpperCase()).save(failOnError: true)
         }

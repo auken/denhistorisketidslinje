@@ -18,6 +18,14 @@
 	<g:select id="game" name="game.id" from="${net.auken.dht.Game.list()}" optionKey="id" required="" value="${stepInstance?.game?.id}" class="many-to-one"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: stepInstance, field: 'helpText', 'error')} ">
+	<label for="helpText">
+		<g:message code="step.helpText.label" default="Help Text" />
+		
+	</label>
+	<g:textField name="helpText" value="${stepInstance?.helpText}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: stepInstance, field: 'name', 'error')} ">
 	<label for="name">
 		<g:message code="step.name.label" default="Name" />

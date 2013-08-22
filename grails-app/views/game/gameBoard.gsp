@@ -66,7 +66,7 @@
         </div>
 
         <div class="right-col">
-            <div class="content">Her er hj¾lpeteksten - for s¿ren... 123 456 !!
+            <div class="content">${Step.findByOccurrenceOrder(5).helpText}
                 <div class="form clearfix">
                     <form action="#">
                         <label>Antal</label>

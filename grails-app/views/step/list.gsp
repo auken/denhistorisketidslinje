@@ -28,6 +28,8 @@
 					
 						<th><g:message code="step.game.label" default="Game" /></th>
 					
+						<g:sortableColumn property="helpText" title="${message(code: 'step.helpText.label', default: 'Help Text')}" />
+					
 						<g:sortableColumn property="name" title="${message(code: 'step.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="occurrenceOrder" title="${message(code: 'step.occurrenceOrder.label', default: 'Occurrence Order')}" />
@@ -41,6 +43,8 @@
 						<td><g:link action="show" id="${stepInstance.id}">${fieldValue(bean: stepInstance, field: "maxToolBoxEntriesAllowed")}</g:link></td>
 					
 						<td>${fieldValue(bean: stepInstance, field: "game")}</td>
+					
+						<td>${fieldValue(bean: stepInstance, field: "helpText")}</td>
 					
 						<td>${fieldValue(bean: stepInstance, field: "name")}</td>
 					

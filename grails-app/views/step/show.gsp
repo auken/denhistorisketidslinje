@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${stepInstance?.helpText}">
+				<li class="fieldcontain">
+					<span id="helpText-label" class="property-label"><g:message code="step.helpText.label" default="Help Text" /></span>
+					
+						<span class="property-value" aria-labelledby="helpText-label"><g:fieldValue bean="${stepInstance}" field="helpText"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${stepInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="step.name.label" default="Name" /></span>
